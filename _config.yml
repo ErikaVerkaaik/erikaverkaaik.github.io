@@ -1,6 +1,6 @@
 site: erikaverkaaik
 url: 
-baseurl: "www.erikaverkaaik.com"
+baseurl: www.erikaverkaaik.com
 
 collections:
   pages:
