@@ -1,0 +1,72 @@
+---
+layout: default
+overtitle: Hi, my name is Erika and I'm a Brisbane based game developer. Known for creating trash games and exploratory digital spaces, I like to experiment and create small, weird things. In my spare time, I also organise and run a local game dev meetup called Squiggly River.
+description: 
+title: i make games
+featured_image: /images/social.jpg
+---
+
+<div class="page-home">
+
+	{% if site.data.settings.hero_settings.background_image %}
+	<img src="{{ site.data.settings.hero_settings.background_image | relative_url }}" class="hero__background" draggable="false">
+	{% endif %}
+
+	<section class="hero">
+		<div class="wrap">
+			<div class="title">
+				<p class="subtitle">
+				<!-- {{ page.overtitle }} -->
+				Hi, my name is Erika and I'm  <mark>a Brisbane based game developer</mark>. I like to experiment and create <a href="https://erikaverkaaik.itch.io/" target="_blank">small, weird things</a>, especially games about exploration. In my spare time, I also organise and run a local game dev meetup called <a href="https://twitter.com/SquigglyRiver">Squiggly River</a>.
+				</p>
+				<h1>{{ page.title }}</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="listing">
+		<div class="project__grid">
+			{% for project in site.projects reversed %}
+
+			{% if project.accent_color %}{% capture accent_color %}{{ project.accent_color }}{% endcapture %}{% endif %}
+
+			<div class="project__preview">
+				<div class="project__images owl-carousel" style="--accent: {{ accent_color }}">
+					{% for image in project.gallery_images %}
+					<a href="{{ project.project_url }}"><img src="{{ '/images/projects/' | relative_url}}{{ image }}" alt="" class="project__image"></a>
+					{% endfor %}
+				</div>
+
+				<h4 class="project__title"><a href="{{ project.project_url }}" style="--accent: {{ accent_color }}">{{ project.title }}</a></h4>
+
+				<div class="project__content" style="border-color: {{ accent_color }}">
+					<p class="project__subtitle subtitle--light">{{ project.subtitle }}</p>
+					<p class="project__description --small">
+						{{ project.description }}
+					</p>
+				</div>
+			</div>
+
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="listing other-stuff">
+		<div class="wrap">
+			<div class="title">
+				<h1>and do other stuff</h1>
+				<p class="subtitle">Community Work</p>
+				<ul>
+					<li><strong>Organiser and Moderator of <a href="https://twitter.com/squigglyriver" target="_blank">Squiggly River</a></strong>: a Brisbane game dev meetup.</em></li>
+					<li><strong>Board member of <a href="https://twitter.com/makingspacecoop" target="_blank">Making Space</a></strong>: a support organisation empowering minority and underrepresented people in game dev.</li>
+				</ul>
+				<p class="subtitle">Talks & Writing</p>
+				<ul>
+					<li><strong>Freeplay Independent Games Festival 2018</strong> (<a href="https://youtu.be/bRbeIFsfkaI?t=28894" target="_blank">Video</a>): Micro Talk</li>
+					<li><strong>Games to Write Home About</strong> (<a href="https://gamestowritehomeabout.tumblr.com/" target="_blank">Blog</a>): Short form analysis of interesting things in interesting games</li>
+				</ul>
+			</div>
+		</div>
+
+	</section>
+</div>
