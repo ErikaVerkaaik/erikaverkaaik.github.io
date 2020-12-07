@@ -6,6 +6,18 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
 
+h1.header__title.mobile-only {
+  display: normal;
+
+  @include mq(tabletp) {
+    display: none;
+  }
+}
+
+.mobile-only {
+    padding-bottom: 40px;
+  }
+
 .header--main {
   padding: 40px 0;
 
@@ -27,10 +39,17 @@
 
     @include mq(tabletp) {
       font-size: $sitetitle-medium;
+
+      .mobile-only {
+        display: none;
+      }
     }
 
     @include mq(laptop) {
       font-size: $sitetitle-large;
+      .mobile-only {
+        display: none;
+      }
     }
 
     &:hover {

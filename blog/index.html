@@ -6,14 +6,14 @@ featured_image: /images/social.jpg
 ---
 
 <div class="page-blog">
-	<<!-- section class="hero">
+	<section class="hero" style="padding-bottom: 0;">
 		<div class="wrap">
-			<h1 class="header__title">{{ page.title }}</h1>
-			<p class="header__subtitle subtitle">{{ page.description }}</p>
+			<h1 class="header__title mobile-only">{{ page.title }}</h1>
+			<!-- <p class="header__subtitle subtitle">{{ page.description }}</p> -->
 		</div>
-	</section> -->
+	</section>
 
-	<section class="all-posts hero">
+	<section class="all-posts">
 		<div class="wrap">
 			<div class="posts__list grid">
 				{% for post in paginator.posts %}
