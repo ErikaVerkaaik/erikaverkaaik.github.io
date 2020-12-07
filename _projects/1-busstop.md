@@ -1,5 +1,5 @@
 ---
-title: Busstop
+title: Bus Stop
 subtitle: a story of mundane horror that happened at a bus stop
 date: 2018-03-29
 description: ✎ solo developer
