@@ -3,7 +3,7 @@ title: <>
 subtitle: a co-op card game about relationship maintenance
 date: 2018-03-29
 description: ✎ game design & card design
-project_url: https://erikaverkaaik.itch.io/itswhateveryouthinkitis
+project_url: https://odd-hours.itch.io/itswhateveryouthinkitis
 featured_image: cardgame2.gif
 accent_color: '#72dfc8'
 gallery_images:

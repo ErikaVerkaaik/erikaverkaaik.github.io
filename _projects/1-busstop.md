@@ -3,7 +3,7 @@ title: Bus Stop
 subtitle: a story of mundane horror that occured at a bus stop
 date: 2018-03-29
 description: ✎ solo developer
-project_url: https://erikaverkaaik.itch.io/bus-stop
+project_url: https://odd-hours.itch.io/bus-stop
 featured_image: busstop.gif
 accent_color: '#5189bf'
 gallery_images:

@@ -3,7 +3,7 @@ title: Fishbowl
 subtitle: a small diorama of a fishbowl for you to explore
 date: 2018-03-29
 description: ✎ solo developer
-project_url: https://erikaverkaaik.itch.io/fishbowl
+project_url: https://odd-hours.itch.io/fishbowl
 featured_image: fishbowl.gif
 accent_color: '#ffa74e'
 gallery_images:

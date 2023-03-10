@@ -3,7 +3,7 @@ title: crafting consent
 subtitle: a 2-player cooperative craft project about consent
 date: 2018-03-29
 description: ✎ solo developer
-project_url: https://erikaverkaaik.itch.io/crafting-consent
+project_url: https://odd-hours.itch.io/crafting-consent
 featured_image: CraftingConsent.gif
 accent_color: '#e5499a'
 gallery_images:
