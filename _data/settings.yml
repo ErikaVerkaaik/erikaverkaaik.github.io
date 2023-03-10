@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: erika verkaaik
+  site_title: erix verkaaik
   favicon_image: images/icons/sparkle.svg
 
 header_settings:
@@ -35,8 +35,8 @@ contact_settings:
 
 social_settings:
   facebook_url: ''
-  twitter_url: 'https://twitter.com/erikaverkaaik'
-  itch-io_url: 'https://erikaverkaaik.itch.io/'
+  twitter_url: 'https://twitter.com/erix_makes'
+  itch-io_url: 'https://odd-hours.itch.io/'
   instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
