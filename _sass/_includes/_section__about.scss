@@ -13,13 +13,15 @@
   .about__image {
     width: 100%;
     margin: 0px;
-    max-width: 450px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: left;
+    padding-bottom: 30px;
+    padding-right: 5px;
 
     img {
-      margin-bottom: 24px;
+      margin-bottom: 0px;
     }
   }
 
@@ -28,9 +30,9 @@
   }
 
   .about__content {
-    max-width: 600px;
+    max-width: calc(2/3 * 1200px);
     margin-top: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 
     .title {
       margin-bottom: 16px;
@@ -64,6 +66,7 @@
 		
 		.about__content {
 			margin-top: 0px;
+      padding-left: 25px;
 
 			.subtitle {
 				margin-bottom: 24px;
@@ -79,7 +82,7 @@
   list-style: none;
   justify-content: right;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .left-socials .socials {
@@ -108,7 +111,8 @@
   margin-left: 0px;
 
   &:first-child {
-    margin-left: 0;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -119,14 +123,15 @@
   justify-content: center;
   width: 38px;
   height: 38px;
-  border-radius: 100%;
-  background: $text-dark-color;
-  font-size: 22px;
+  border-radius: 15%;
+  background: $light-accent-color;
+  font-size: 28px;
   color: $background-color;
 
   &:hover {
     background: $accent-color;
     color: $background-color;
+    text-decoration: none !important;
   }
 
   &:active {

@@ -35,7 +35,7 @@ h1.header__title.mobile-only {
     font-weight: $sitetitle-weight;
     letter-spacing: $sitetitle-spacing;
     line-height: 1;
-    color: $text-dark-color;
+    color: $light_accent_color;
 
     @include mq(tabletp) {
       font-size: $sitetitle-medium;
@@ -53,7 +53,7 @@ h1.header__title.mobile-only {
     }
 
     &:hover {
-      color: $accent-color;
+      text-decoration: none !important;
     }
   }
 
@@ -62,7 +62,7 @@ h1.header__title.mobile-only {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: $background-color;
     position: fixed;
     top: 10px;
     left: 0;
@@ -188,6 +188,7 @@ h1.header__title.mobile-only {
   flex-direction: column;
   align-items: center;
   margin-top: 120px;
+  padding-top: 15px;
 
   .menu__list__item {
     margin-bottom: 24px;
@@ -200,9 +201,12 @@ h1.header__title.mobile-only {
     line-height: $h4-lineheight;
     letter-spacing: $h4-spacing-small;
     text-transform: none;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $background-color;
 
     &.active-link {
       color: $accent-color;
+      border-bottom: 3px solid $accent-color;
     }
   }
 
@@ -223,13 +227,17 @@ h1.header__title.mobile-only {
     }
 
     .menu__list__item__link {
-      font-size: 14px;
+      font-size: 18px;
       line-height: 18px;
       display: inline-block;
-      color: $text-dark-color;
+      color: $accent-color;
       font-weight: $button-weight;
       letter-spacing: $button-spacing;
       text-transform: uppercase;
+
+      &:hover {
+      text-decoration: none !important;
+    }
     }
 
     .menu__cta__link {

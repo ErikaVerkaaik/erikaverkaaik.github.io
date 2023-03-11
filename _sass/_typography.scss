@@ -16,9 +16,46 @@ h5,
 .h5,
 h6,
 .h6,
-.subtitle {
+.subtitle,
+.header__title {
   font-family: $title-font;
-  color: $text-dark-color;
+  color: $light_accent_color;
+}
+
+.always_shake {
+  animation: shake 2500ms linear forwards;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    animation: none;
+  }
+}
+
+@keyframes shake {
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+        filter: blur(1px);
+        transform: translateY(1px) rotate(0deg);
+    }
+
+    10%, 30%, 40%, 50%, 70%, 80%, 90% {
+        filter: blur(1px);
+        transform: translateY(-1px) rotate(0deg);
+    }
+
+    20%, 60% {
+        filter: blur(0px);
+        transform: translate(-1px, 1px) rotate(0deg);
+    }
+
+    45%, 85% {
+        filter: blur(1px);
+        transform: translate(1px, -1px) rotate(0deg);
+    }
+
+    100% {
+        filter: blur(0px);
+        transform: translate(0) rotate(-1deg);
+    }
 }
 
 h1,
@@ -56,6 +93,7 @@ h3,
   letter-spacing: $h3-spacing-small;
   line-height: $h3-lineheight-small;
 
+
   @include mq(tabletp) {
     font-size: $h3-size;
     line-height: $h3-lineheight;
@@ -69,6 +107,8 @@ h4,
   font-weight: $h4-weight;
   line-height: $h4-lineheight;
   letter-spacing: $h4-spacing-small;
+  color: $light-accent-color-lighter;
+  padding-bottom: 10px;
 
   @include mq(tabletp) {
     font-size: $h4-size;
@@ -108,6 +148,8 @@ h6,
 mark {
   background: $light-accent-color;
   font-weight: 500;
+  padding: 0px 5px;
+  box-shadow: 5px 5px $accent-color;
 }
 
 .subtitle {
@@ -115,6 +157,7 @@ mark {
   font-size: $subtitle-size-small;
   letter-spacing: $subtitle-spacing-small;
   line-height: $subtitle-lineheight-small;
+  color: $text_dark_color;
 
   &--light {
     @extend .subtitle;
@@ -123,7 +166,6 @@ mark {
 
   a {
     font-weight: 500;
-    text-decoration: underline !important;
     text-decoration-color: transparentize($color: $accent-color, $amount: 0.8);
   }
 
@@ -153,7 +195,7 @@ p,
   }
 
   a {
-  text-decoration: underline;
+    text-decoration: none !important;
   }
 
   @include mq(tabletp) {
@@ -194,13 +236,13 @@ blockquote {
 }
 
 a {
-  text-decoration: none;
-  color: $text-dark-color;
+  text-decoration: none !important;
+  color: $accent-color;
   font-weight: $bold-weight;
   @include transition(all 120ms ease-in-out);
 
   &:hover {
-    color: $accent-color;
+    text-decoration: underline !important;
   }
 }
 

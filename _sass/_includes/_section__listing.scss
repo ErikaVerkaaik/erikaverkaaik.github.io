@@ -9,7 +9,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .project__grid {
@@ -37,7 +37,7 @@
   {
     grid-template-columns: 22% 22% 22% 22%;
     padding: 0px 45px;
-    grid-gap: 4%;
+    grid-gap: 60px 4%;
   }
   
 }
@@ -47,13 +47,18 @@
   width: 100%;
   padding-bottom: 60px !important;
 
+  &:last-child {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
   @include mq(tabletp) 
   {
-    padding-bottom: 15px !important;
+    padding-bottom: 0px !important;
   }
 
   &:not(:last-child) {
-    margin-bottom: 15px !important;
+    margin-bottom: 0px !important;
   }
 
   .project__title {
@@ -73,6 +78,7 @@
   .project__images {
     position: relative;
     margin-bottom: 25px;
+    border: 4px solid white;
 
     .owl-stage-outer {
       overflow: visible;

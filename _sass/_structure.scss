@@ -17,6 +17,14 @@
   max-width: 1200px;
 }
 
+.section-titles {
+  position: relative;
+  margin: 0 auto;
+  padding: 60px 30px 60px 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .grid {
 	display: grid;
 	grid-gap: 30px;
@@ -33,6 +41,18 @@
 
   @include mq(tabletp) {
     grid-gap: 30px;
+  }
+}
+
+.grid-1-2 {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+
+  @include mq(tabletp)
+  {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 2fr !important;
   }
 }
 

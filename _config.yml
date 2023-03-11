@@ -12,6 +12,9 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  manifestos:
+    output: true
+    permalink: /manifesto/:slug
 
 defaults:
   -
@@ -37,6 +40,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  -
+    scope:
+      path: ""
+      type: "manifestos"
+    values:
+      layout: "manifesto"
 
 markdown: kramdown
 highlighter: rouge

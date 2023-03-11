@@ -1,8 +1,11 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'jekyll', '3.8.5'
+source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
+# gem "rails"
+
+gem "jekyll", "~> 4.0"
+
+gem "webrick", "~> 1.8"
+
+gem "jekyll-sitemap", "~> 1.4"
